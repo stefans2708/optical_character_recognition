@@ -75,7 +75,7 @@ model.compile(optimizer=keras.optimizers.Adam(lr=1e-4),
               metrics=[keras.metrics.sparse_categorical_accuracy])
 model.summary()
 
-model.fit(x_train, y_train, epochs=20, validation_data=(x_test, y_test), verbose=2)
+model.fit(x_train, y_train, epochs=25, validation_data=(x_test, y_test), verbose=2)
 
 save_model_data()
 
